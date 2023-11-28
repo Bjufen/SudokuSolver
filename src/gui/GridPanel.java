@@ -14,18 +14,6 @@ public class GridPanel extends JPanel {
     private Grid grid;
     private boolean validInput = true;
 
-
-    int[][] board1 = {
-            { 3, 0, 6, 5, 0, 8, 4, 0, 0 },
-            { 5, 2, 0, 0, 0, 0, 0, 0, 0 },
-            { 0, 8, 7, 0, 0, 0, 0, 3, 1 },
-            { 0, 0, 3, 0, 1, 0, 0, 8, 0 },
-            { 9, 0, 0, 8, 6, 3, 0, 0, 5 },
-            { 0, 5, 0, 0, 9, 0, 6, 0, 0 },
-            { 1, 3, 0, 0, 0, 0, 2, 5, 0 },
-            { 0, 0, 0, 0, 0, 0, 0, 7, 4 },
-            { 0, 0, 5, 2, 0, 6, 3, 0, 0 }
-    };
     public GridPanel(DisplayPanel displayPanel) {
 
         this.displayPanel = displayPanel;
@@ -43,9 +31,6 @@ public class GridPanel extends JPanel {
                 JTextField textBox = new TextBox(preferredSize);
                 gridCells[i][j] = textBox;
                 add(textBox);
-                if (board1[i][j] != 0) {
-                    textBox.setText(Integer.toString(board1[i][j]));
-                }
                 index++;
             }
         }
