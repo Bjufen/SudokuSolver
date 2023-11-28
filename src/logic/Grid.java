@@ -95,6 +95,18 @@ public class Grid {
         return board;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder out = new StringBuilder();
+        for (int i = 0; i < 9; i++){
+            for(int j = 0; j < 9; j++){
+                out.append(grid[i][j].getValue()).append(" ");
+            }
+            out.append("\n");
+        }
+        return out.toString();
+    }
+
     public Cell[][] getGrid() {
         return grid;
     }

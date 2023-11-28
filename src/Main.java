@@ -1,12 +1,29 @@
-import logic.Cell;
-import logic.Grid;
-import logic.Region;
+import gui.Frame;
 
 public class Main {
 
     public static void main(String[] args) {
+        Frame myFrame = new Frame();
 
+/*
+        int[][] board1 = {
+                { 3, 0, 6, 5, 0, 8, 4, 0, 0 },
+                { 5, 2, 0, 0, 0, 0, 0, 0, 0 },
+                { 0, 8, 7, 0, 0, 0, 0, 3, 1 },
+                { 0, 0, 3, 0, 1, 0, 0, 8, 0 },
+                { 9, 0, 0, 8, 6, 3, 0, 0, 5 },
+                { 0, 5, 0, 0, 9, 0, 6, 0, 0 },
+                { 1, 3, 0, 0, 0, 0, 2, 5, 0 },
+                { 0, 0, 0, 0, 0, 0, 0, 7, 4 },
+                { 0, 0, 5, 2, 0, 6, 3, 0, 0 }
+        };
 
+        Backtracking backtracking = new Backtracking(board1);
+        System.out.println(backtracking.getResult());
+        Grid grid = new Grid(board1);
+*/
+
+/*
         int[] values0 = {
                 0, 2, 0, 0, 0, 0, 5, 0, 8,
                 9, 0, 5, 6, 0, 0, 3, 0, 2,
@@ -72,7 +89,7 @@ public class Main {
                 System.out.println(grid.getGrid()[row][col].getPossibleValues());
                 System.out.println();
             }
-        }
+        }*/
     }
 }
 
